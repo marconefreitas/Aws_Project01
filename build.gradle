@@ -27,7 +27,7 @@ sourceCompatibility = '15'
 
 bootJar{
 	baseName = "curso_aws_project"
-	version = "1.0.6"
+	version = "1.0.9"
 }
 
 task unpack(type: Copy){
@@ -55,6 +55,12 @@ dependencies {
 
 	compile group: 'org.mariadb.jdbc', name:'mariadb-java-client', version:'2.7.0'
 	compile group: 'com.amazonaws', name: 'aws-java-sdk-sns', version: '1.11.887'
+	compile group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.887'
+
+	compile group: 'com.amazonaws', name: 'aws-java-sdk-sqs', version: '1.11.887'
+	compile group: 'com.amazonaws', name: 'amazon-sqs-java-messaging-lib', version: '1.0.8'
+	compile group: 'org.springframework', name: 'spring-jms', version: '5.3.5'
+
 
 	compileOnly 'org.projectlombok:lombok:1.18.16'
 	annotationProcessor 'org.projectlombok:lombok:1.18.16'
